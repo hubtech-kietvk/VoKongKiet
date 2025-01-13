@@ -1,50 +1,71 @@
-# React + TypeScript + Vite
+# Currency Converter Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Scripts
 
-Currently, two official plugins are available:
+To run the project, you can use the following scripts:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Development Server
+```bash
+npm run dev
 ```
+- Starts the development server with Vite.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### Build
+```bash
+npm run build
 ```
+- Builds the project using TypeScript and Vite.
+
+### Preview
+```bash
+npm run preview
+```
+- Previews the production build.
+
+### Lint
+```bash
+npm run lint
+```
+- Runs ESLint to check for code quality issues.
+
+### Lint Fix
+```bash
+npm run lint:fix
+```
+- Automatically fixes linting issues.
+
+### Prettier Check
+```bash
+npm run prettier
+```
+- Checks code formatting using Prettier.
+
+### Prettier Fix
+```bash
+npm run prettier:fix
+```
+- Formats code using Prettier.
+
+## Technologies Used
+
+### Dependencies
+- **React**: ^18.3.1
+- **React DOM**: ^18.3.1
+- **React Router DOM**: ^7.1.1
+- **Ant Design**: ^5.23.0
+- **Styled Components**: ^6.1.14
+- **Moment.js**: ^2.30.1
+- **Prettier**: ^3.4.2
+- **ESLint**: ^9.17.0
+
+### Dev Dependencies
+- **TypeScript**: ~5.6.2
+- **Vite**: ^6.0.5
+- **@vitejs/plugin-react-swc**: ^3.5.0
+- **@types/react**: ^18.3.18
+- **@types/react-dom**: ^18.3.5
+- **@types/node**: ^22.10.5
+- **eslint-plugin-react-hooks**: ^5.0.0
+- **eslint-plugin-react-refresh**: ^0.4.16
+- **eslint-config-prettier**: ^9.1.0
+
